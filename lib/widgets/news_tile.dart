@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class NewsTile extends StatelessWidget {
   const NewsTile({super.key, required this.articleModel});
@@ -13,12 +14,11 @@ class NewsTile extends StatelessWidget {
       children: [
         ClipRRect(
             borderRadius: BorderRadius.circular(6),
-            child: Image.network(
-              articleModel.image?? 'https://st2.depositphotos.com/1575949/7992/v/950/depositphotos_79929204-stock-illustration-content-removed-red-stamp-text.jpg',
-              height: 200,
-              width: double.infinity,
-              fit: BoxFit.cover,
-            )),
+            child: CachedNetworkImage(
+        imageUrl: articleModel.image ?? '',
+        placeholder: (context, url) => const SizedBox(height: 200, child: Center(child: CircularProgressIndicator())),
+        errorWidget: (context, url, error) => const SizedBox(height: 200, child: Center(child: Icon(Icons.error))),
+     ),),
         const SizedBox(
           height: 12,
         ),
