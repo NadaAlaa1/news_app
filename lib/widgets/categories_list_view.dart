@@ -29,8 +29,8 @@ class CategoriesListView extends StatelessWidget {
       categoryName: 'Health',
     ),
     CategoryModel(
-      imageAssetUrl: 'assets/entertaiment.png',
-      categoryName: 'Entertaiment',
+      imageAssetUrl: 'assets/entertainment.png',
+      categoryName: 'Entertainment',
     ),
     CategoryModel(
       imageAssetUrl: 'assets/general.png',
