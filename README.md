@@ -39,10 +39,13 @@ A Flutter-based news application that fetches and displays the latest headlines 
      
 5. **Add the API Key**
 
-   Replace `YOUR_API_KEY_HERE` in `NewsService` with your actual NewsAPI key.
-   ```dart 
+   Replace `YOUR_API_KEY_HERE` in the `NewsService` class with your actual NewsAPI key to enable the app to fetch news articles. 
+   
+   Open `NewsService` and update the following line:
+   
+   ```dart
    var response = await dio.get(
-  'https://newsapi.org/v2/top-headlines?apikey=YOUR_API_KEY_HERE&country=us&category=$category'
+     'https://newsapi.org/v2/top-headlines?apiKey=YOUR_API_KEY_HERE&country=us&category=$category'
    );
 
 6. **Platform-Specific Configuration**
