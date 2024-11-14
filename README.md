@@ -62,3 +62,28 @@ A Flutter-based news application that fetches and displays the latest headlines 
 7. **Run the App**
    ```bash
    flutter run
+
+## Configuration
+
+- **API**: This app uses [NewsAPI](https://newsapi.org/) to fetch news articles.
+- **WebView**: Implemented using `webview_flutter` to render full article pages.
+  
+## Project Structure
+
+Here’s a brief overview of the key folders and files in this project:
+- **lib/main.dart**: Entry point of the application.
+- **lib/models**: Contains data models, such as `ArticleModel` and `CategoryModel`.
+- **lib/services**: Handles network requests using `Dio` for fetching news data.
+- **lib/views**: Holds screens like `HomeView`, `CategoryView`, and `ArticleWebView`.
+- **lib/widgets**: Contains reusable widgets, such as `CategoryCard`, `NewsTile`, `NewsListView`.
+  
+## Dependencies
+
+- **flutter**: The main framework for building the application.
+- **dio**: A powerful HTTP client for Dart, used for making API requests.
+- **webview_flutter**: Enables in-app web browsing to open full news articles.
+- **cached_network_image**: Provides image caching and loading for optimized performance.
+
+Install these dependencies by running:
+```bash
+flutter pub get
