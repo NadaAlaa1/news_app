@@ -26,3 +26,10 @@ A Flutter-based news application that fetches and displays the latest headlines 
    ```bash
    git clone https://github.com/your-username/news-app.git
    cd news-app
+   
+2. **Install dependencies**
+   
+   Make sure you have Flutter installed. Then, run the following command to install the required packages:
+
+   ```bash
+   flutter pub get
