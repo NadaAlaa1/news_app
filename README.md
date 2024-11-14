@@ -22,9 +22,8 @@ A Flutter-based news application that fetches and displays the latest headlines 
 ## Setup
 
 1. **Clone the repository**
-
    ```bash
-   git clone https://github.com/your-username/news-app.git
+   git clone https://github.com/NadaAlaa1/news-app.git
    cd news-app
    
 2. **Install dependencies**
@@ -41,8 +40,7 @@ A Flutter-based news application that fetches and displays the latest headlines 
 5. **Add the API Key**
 
    Replace `YOUR_API_KEY_HERE` in `NewsService` with your actual NewsAPI key.
-   ```dart
-   
+   ```dart 
    var response = await dio.get(
   'https://newsapi.org/v2/top-headlines?apikey=YOUR_API_KEY_HERE&country=us&category=$category'
    );
@@ -62,9 +60,5 @@ A Flutter-based news application that fetches and displays the latest headlines 
      </dict>
 
 7. **Run the App**
-   Start the application on a connected device or emulator:
-
    ```bash
    flutter run
-
-    
