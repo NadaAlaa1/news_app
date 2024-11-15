@@ -23,20 +23,11 @@ A Flutter-based news application that fetches and displays the latest headlines 
 ## Demo
 Here’s a preview of the News App in action:
 
-### Home Screen
-The Home Screen displays various news categories and the latest headlines.
-
-![Home Screen](assets/screenshots/home.jpeg)
-
-### Category Screen
-Explore news articles for a selected category.
-
-![Category Screen](assets/screenshots/category.jpeg)
-
-### Article WebView
-Read the full article within the app’s WebView.
-
-![Article WebView](assets/screenshots/article_webview.jpeg)
+<p align="center">
+  <img src="assets/screenshots/home.jpeg" alt="Home Screen" width="300">
+  <img src="assets/screenshots/category.jpeg" alt="Category Screen" width="300">
+   <img src="assets/screenshots/article_webview.jpeg" alt="Article WebView" width="300">
+</p>
 
 ### Video/GIF Demo
 Watch the app in action:
