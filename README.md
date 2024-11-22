@@ -10,7 +10,6 @@ A Flutter-based news application that fetches and displays the latest headlines 
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [License](#license)
 
 ## Features
 
